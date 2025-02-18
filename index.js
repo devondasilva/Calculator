@@ -42,6 +42,7 @@
 document.addEventListener("keydown",(e)=>{
     
     const key  = e.key;
+    console.log(key);
 
     if ( '0'<=key && key<='9' || key === '.' || (key ==='-' && n.length ===0))
         {
@@ -86,6 +87,8 @@ document.addEventListener("keydown",(e)=>{
                             
 
             }
+        } else if (key==='Escape'){
+            window.location.reload();
         }
        
         
